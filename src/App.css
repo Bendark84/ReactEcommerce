@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.home-img {
+  object-fit: contain;
+  height: 250px;
+  padding: 1rem;
+}
+.home-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+.strong-price {
+  color: red;
+}
+.product-Detail img {
+  height: 200px;
+}
+.product-Detail {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.description {
+  font-size: 20px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.product-Detail strong {
+  color: red;
+}
+ul {
+  list-style: none;
+}
