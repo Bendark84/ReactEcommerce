@@ -21,9 +21,23 @@ export const getFavoriteThunk = () => (dispatch) => {
       'https://ecommerce-api-react.herokuapp.com/api/v1/purchases',
       getConfig()
     )
-    .then((red) => dispatch(setFavorites(res.data)))
+    .then((res) => dispatch(setFavorites(res.data.data.purchases)))
     .finally(() => dispatch(setIsLoading(false)));
 };
+
+//este es para la funcion del produc detail agregar cosas al carrito
+
+// export const addCartThunk = (shoop) => (dispatch) => {
+//   dispatch(setIsLoading(true));
+//   return axios
+//     .post(
+//       'https://ecommerce-api-react.herokuapp.com/api/v1/cart',
+//       shoop,
+//       getConfig()
+//     )
+//     .then(() => dispatch(getFavoriteThunk()))
+//     .finally(() => dispatch(setIsLoading(false)));
+// };
 
 export const { setFavorites } = favoriteSlice.actions;
 
